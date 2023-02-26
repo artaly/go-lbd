@@ -1,5 +1,5 @@
 # go-lbd
  
- ## File Structure
+ ### File Structure
  
  1. go-server
