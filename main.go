@@ -15,15 +15,20 @@ type Movie struct {
 	ID string `json:"id"`
 	Isbn string `json:"isbn"`
 	Title string `json:"title"`
+	// Will reference Director struct
 	Director *Director `json:"director"`
 }
+
 
 type Director struct {
 	FirstName string `json:"firstname"`
 	LastName string `json:"lastname"`
 }
 
+// Where we will keep da moves
 var movies []Movie
+
+
 
 func getMovies(w http.ResponseWriter, r*http.Request) {
 	w.Header().Set("Content-Type", "application/json")
