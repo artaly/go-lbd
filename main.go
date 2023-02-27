@@ -28,7 +28,7 @@ type Director struct {
 // Where we will keep da moves
 var movies []Movie
 
-
+// When testing in Postman, don't forget to add IDs to delete and update, and get movie
 
 func getMovies(w http.ResponseWriter, r*http.Request) {
 	w.Header().Set("Content-Type", "application/json")
